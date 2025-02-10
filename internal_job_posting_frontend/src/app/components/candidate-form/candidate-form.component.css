@@ -1,0 +1,63 @@
+/* Container for the candidate form */
+.candidate-form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Heading for the candidate form */
+.candidate-form-container h2 {
+  text-align: center;
+  color: #4A5568; /* Dark gray */
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+.candidate-form {
+  background-color: #EDF2F7; /* Light gray */
+  border: 1px solid #CBD5E0; /* Medium gray */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Input styling */
+.candidate-form input[type="text"],
+.candidate-form input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #CBD5E0; /* Medium gray */
+  border-radius: 4px;
+  font-size: 1em;
+  color: #2D3748; /* Dark gray */
+  transition: border-color 0.3s ease;
+}
+
+.candidate-form input[type="text"]:focus,
+.candidate-form input[type="email"]:focus {
+  border-color: #4C51BF; /* Purple */
+  outline: none;
+}
+
+/* Submit button styling */
+.submit-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #4C51BF; /* Purple */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #434190; /* Darker purple */
+}

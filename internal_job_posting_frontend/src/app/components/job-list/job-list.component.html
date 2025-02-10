@@ -1,0 +1,12 @@
+<div class="job-list-container">
+    <h2>Job Listings</h2>
+    <ul class="job-list">
+        <li *ngFor="let job of jobs" class="job-card">
+            <div class="job-header">
+                <h3 class="job-title">{{ job.name }}</h3>
+                <span class="job-category">{{ job.category }}</span>
+            </div>
+            <p class="job-description">{{ job.description }}</p>
+        </li>
+    </ul>
+</div>

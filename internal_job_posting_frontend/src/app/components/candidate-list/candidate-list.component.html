@@ -1,0 +1,11 @@
+<div class="candidate-list-container">
+    <h2>Candidate Listings</h2>
+    <ul class="candidate-list">
+        <li *ngFor="let candidate of candidates" class="candidate-card">
+            <div class="candidate-header">
+                <h3 class="candidate-name">{{ candidate.name }}</h3>
+                <span class="candidate-skills">{{ candidate.other }}</span>
+            </div>
+        </li>
+    </ul>
+</div>
