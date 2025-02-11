@@ -13,5 +13,4 @@ target/
 
 # Ignore environment and credentials
 .env
-application.properties
 
