@@ -13,5 +13,5 @@ public class Candidate {
     private Long id;
     private String name;
     private String email;
-    private String other;
+    private String resumeUrl;
 }
