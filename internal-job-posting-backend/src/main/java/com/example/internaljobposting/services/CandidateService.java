@@ -1,7 +1,7 @@
-package com.example.internal_job_posting.services;
+package com.example.internaljobposting.services;
 
-import com.example.internal_job_posting.models.Candidate;
-import com.example.internal_job_posting.repositories.CandidateRepository;
+import com.example.internaljobposting.models.Candidate;
+import com.example.internaljobposting.repositories.CandidateRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
