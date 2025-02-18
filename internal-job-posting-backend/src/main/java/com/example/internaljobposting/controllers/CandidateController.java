@@ -1,7 +1,7 @@
-package com.example.internal_job_posting.controllers;
+package com.example.internaljobposting.controllers;
 
-import com.example.internal_job_posting.models.Candidate;
-import com.example.internal_job_posting.services.CandidateService;
+import com.example.internaljobposting.models.Candidate;
+import com.example.internaljobposting.services.CandidateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
