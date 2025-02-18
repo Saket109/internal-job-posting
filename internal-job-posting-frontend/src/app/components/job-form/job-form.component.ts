@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./job-form.component.css']
 })
 export class JobFormComponent {
-  job = { name: '', description: '', category: '' };
+  job = { title: '', description: '', department: '' };
   constructor(private jobService: JobService) {}
 
   postJob() {
