@@ -1,4 +1,4 @@
-package com.example.internal_job_posting;
+package com.example.internaljobposting;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
