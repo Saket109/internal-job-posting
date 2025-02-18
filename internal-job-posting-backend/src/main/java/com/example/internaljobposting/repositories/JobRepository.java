@@ -1,6 +1,6 @@
-package com.example.internal_job_posting.repositories;
+package com.example.internaljobposting.repositories;
 
-import com.example.internal_job_posting.models.Job;
+import com.example.internaljobposting.models.Job;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
