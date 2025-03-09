@@ -11,7 +11,7 @@
 	<groupId>com.example</groupId>
 	<artifactId>internal_job_posting</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>internal_job_posting</name>
+	<name>internal-job-posting-backend</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>

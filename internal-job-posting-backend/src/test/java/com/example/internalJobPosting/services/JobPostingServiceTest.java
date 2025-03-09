@@ -1,4 +1,4 @@
-package com.example.internalJobPosting.services;
+package com.example.internaljobposting.services;
 
 import com.example.internalJobPosting.models.JobPosting;
 import com.example.internalJobPosting.repositories.JobRepository;
@@ -33,4 +33,17 @@ public class JobPostingServiceTest {
         List<JobPosting> jobPostings = jobService.getAllJobs();
         assertEquals(2, jobPostings.size());
     }
+
+    @Test
+    void testCreateJob() {
+        JobPosting newJob = new JobPosting(3L, "Product Manager", "Manage product lifecycle", "Product");
+
+        when(jobRepository.save(newJob)).thenReturn(newJob);
+
+        JobPosting savedJob = jobService.createJob(newJob);
+
+        assertEquals(newJob.getId(), savedJob.getId());
+        assertEquals(newJob.getTitle(), savedJob.getTitle());
+    }
+
 }

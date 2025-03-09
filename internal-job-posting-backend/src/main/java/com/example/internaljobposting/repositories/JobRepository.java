@@ -1,4 +1,4 @@
-package com.example.internalJobPosting.repositories;
+package com.example.internaljobposting.repositories;
 
 import com.example.internalJobPosting.models.JobPosting;
 import org.springframework.data.jpa.repository.JpaRepository;

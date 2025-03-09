@@ -1,4 +1,4 @@
-package com.example.internalJobPosting.services;
+package com.example.internaljobposting.services;
 
 import com.example.internalJobPosting.models.Candidate;
 import com.example.internalJobPosting.repositories.CandidateRepository;
@@ -33,4 +33,17 @@ public class CandidateServiceTest {
         List<Candidate> candidates = candidateService.getAllCandidates();
         assertEquals(2, candidates.size());
     }
+
+    @Test
+    void testRegisterCandidate() {
+        Candidate newCandidate = new Candidate(3L, "Charlie", "charlie@example.com", "Other details");
+
+        when(candidateRepository.save(newCandidate)).thenReturn(newCandidate);
+
+        Candidate savedCandidate = candidateService.registerCandidate(newCandidate);
+
+        assertEquals(newCandidate.getId(), savedCandidate.getId());
+        assertEquals(newCandidate.getName(), savedCandidate.getName());
+    }
+
 }

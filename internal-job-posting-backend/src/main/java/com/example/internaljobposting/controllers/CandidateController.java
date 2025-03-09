@@ -1,4 +1,4 @@
-package com.example.internalJobPosting.controllers;
+package com.example.internaljobposting.controllers;
 
 import com.example.internalJobPosting.models.Candidate;
 import com.example.internalJobPosting.services.CandidateService;
