@@ -6,7 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { JobListComponent } from './components/job-list/job-list.component';
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
-import { JobFormComponent } from './components/job-form/job-form.component';
+import { JobFormComponent } from './components/job-posting/job-posting.component';
 import { CandidateFormComponent } from './components/candidate-form/candidate-form.component';
 
 @NgModule({

@@ -1,9 +1,9 @@
-package com.example.internaljobposting.repositories;
+package com.example.internalJobPosting.repositories;
 
-import com.example.internaljobposting.models.Job;
+import com.example.internalJobPosting.models.JobPosting;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface JobRepository extends JpaRepository<Job, Long> {
+public interface JobRepository extends JpaRepository<JobPosting, Long> {
 }

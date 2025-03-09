@@ -1,7 +1,7 @@
-package com.example.internal_job_posting.services;
+package com.example.internalJobPosting.services;
 
-import com.example.internal_job_posting.models.Candidate;
-import com.example.internal_job_posting.repositories.CandidateRepository;
+import com.example.internalJobPosting.models.Candidate;
+import com.example.internalJobPosting.repositories.CandidateRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;

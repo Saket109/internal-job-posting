@@ -1,7 +1,7 @@
-package com.example.internaljobposting.services;
+package com.example.internalJobPosting.services;
 
-import com.example.internaljobposting.models.Job;
-import com.example.internaljobposting.repositories.JobRepository;
+import com.example.internalJobPosting.models.JobPosting;
+import com.example.internalJobPosting.repositories.JobRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,11 +13,11 @@ public class JobService {
     @Autowired
     private JobRepository jobRepository;
 
-    public List<Job> getAllJobs() {
+    public List<JobPosting> getAllJobs() {
         return jobRepository.findAll();
     }
 
-    public Job createJob(Job job) {
-        return jobRepository.save(job);
+    public JobPosting createJob(JobPosting jobPosting) {
+        return jobRepository.save(jobPosting);
     }
 }

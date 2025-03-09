@@ -1,7 +1,7 @@
-package com.example.internaljobposting.controllers;
+package com.example.internalJobPosting.controllers;
 
-import com.example.internaljobposting.models.Job;
-import com.example.internaljobposting.services.JobService;
+import com.example.internalJobPosting.models.JobPosting;
+import com.example.internalJobPosting.services.JobService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,12 +16,12 @@ public class JobController {
     private JobService jobService;
 
     @GetMapping
-    public List<Job> getAllJobs() {
+    public List<JobPosting> getAllJobs() {
         return jobService.getAllJobs();
     }
 
     @PostMapping
-    public Job createJob(@RequestBody Job job) {
-        return jobService.createJob(job);
+    public JobPosting createJob(@RequestBody JobPosting jobPosting) {
+        return jobService.createJob(jobPosting);
     }
 }

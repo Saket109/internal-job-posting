@@ -11,7 +11,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./candidate-form.component.css']
 })
 export class CandidateFormComponent {
-  candidate = { name: '', email: '', resumeUrl: '' };
+  candidate = { name: '', email: '', other: '' };
   constructor(private candidateService: CandidateService) {}
 
   registerCandidate() {

@@ -1,10 +1,10 @@
-package com.example.internal_job_posting;
+package com.example.internalJobPosting;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class InternalJobPostingApplicationTests {
+class InternalJobPostingPostingApplicationTests {
 
 	@Test
 	void contextLoads() {

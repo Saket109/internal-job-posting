@@ -1,4 +1,4 @@
-package com.example.internaljobposting.models;
+package com.example.internalJobPosting.models;
 
 import jakarta.persistence.*;
 import lombok.*;

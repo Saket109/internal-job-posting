@@ -7,11 +7,11 @@ import { FormsModule } from '@angular/forms';
   selector: 'app-job-form',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './job-form.component.html',
-  styleUrls: ['./job-form.component.css']
+  templateUrl: './job-posting.component.html',
+  styleUrls: ['./job-posting.component.css']
 })
 export class JobFormComponent {
-  job = { title: '', description: '', department: '' };
+  job = { name: '', description: '', category: '' };
   constructor(private jobService: JobService) {}
 
   postJob() {

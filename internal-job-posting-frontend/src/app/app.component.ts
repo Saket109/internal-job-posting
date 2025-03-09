@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { JobListComponent } from './components/job-list/job-list.component';
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
-import { JobFormComponent } from "./components/job-form/job-form.component";
+import { JobFormComponent } from "./components/job-posting/job-posting.component";
 import { CandidateFormComponent } from "./components/candidate-form/candidate-form.component";
 import { RouterModule } from '@angular/router';
 
@@ -13,5 +13,5 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Internal Job Posting System';
+  title = 'Job and Candidate Management';
 }
