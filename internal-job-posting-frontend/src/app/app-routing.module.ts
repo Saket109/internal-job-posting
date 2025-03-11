@@ -5,12 +5,12 @@ import { JobFormComponent } from './components/job-posting/job-posting.component
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
 import { CandidateFormComponent } from './components/candidate-form/candidate-form.component';
 
-const routes: Routes = [
+export const routes: Routes = [
   { path: 'jobs', component: JobListComponent },
   { path: 'add-job', component: JobFormComponent },
   { path: 'candidates', component: CandidateListComponent },
   { path: 'add-candidate', component: CandidateFormComponent },
-  { path: '', redirectTo: '/jobs', pathMatch: 'full' }
+  { path: '', redirectTo: '/jobs', pathMatch: 'full' } // Redirects to jobs by default
 ];
 
 @NgModule({
