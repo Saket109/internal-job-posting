@@ -38,29 +38,3 @@ npm install
 ng serve
 
 The app will be available at http://localhost:4200.
-
-🛠️ Configuration
-
-The frontend currently uses a hardcoded API URL (http://localhost:8080), which should be moved to environment.ts:
-
-export const environment = {
-  production: false,
-  apiBaseUrl: 'http://localhost:8080'
-};
-
-Then update services to use:
-
-private apiUrl = `${environment.apiBaseUrl}/jobs`;
-
-
-💡 Future Improvements
-
-Implement authentication & authorization
-
-Improve UI/UX design
-
-Add notifications & email alerts
-
-Enhance error handling in API calls
-
-Search Filter operations for job listing and candidate listing
