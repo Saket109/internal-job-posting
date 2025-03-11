@@ -2,13 +2,13 @@
     <h2>Post a New Job</h2>
     <form (submit)="postJob()" class="job-form">
         <div class="form-group">
-            <input type="text" [(ngModel)]="job.name" name="job_name" placeholder="Job Name" required>
+            <input type="text" [(ngModel)]="job.title" name="job_name" placeholder="Job Name" required>
         </div>
         <div class="form-group">
             <input type="text" [(ngModel)]="job.description" name="job_description" placeholder="Description" required>
         </div>
         <div class="form-group">
-            <input type="text" [(ngModel)]="job.category" name="job_category" placeholder="Category" required>
+            <input type="text" [(ngModel)]="job.department" name="job_category" placeholder="Category" required>
         </div>
         <button type="submit" class="submit-button">Post Job</button>
     </form>

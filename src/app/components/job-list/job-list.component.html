@@ -3,8 +3,8 @@
     <ul class="job-list">
         <li *ngFor="let job of jobs" class="job-card">
             <div class="job-header">
-                <h3 class="job-title">{{ job.name }}</h3>
-                <span class="job-category">{{ job.category }}</span>
+                <h3 class="job-title">{{ job.title }}</h3>
+                <span class="job-category">{{ job.department }}</span>
             </div>
             <p class="job-description">{{ job.description }}</p>
         </li>

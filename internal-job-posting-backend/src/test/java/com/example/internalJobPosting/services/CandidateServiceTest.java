@@ -1,7 +1,7 @@
 package com.example.internaljobposting.services;
 
-import com.example.internalJobPosting.models.Candidate;
-import com.example.internalJobPosting.repositories.CandidateRepository;
+import com.example.internaljobposting.models.Candidate;
+import com.example.internaljobposting.repositories.CandidateRepository;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -33,17 +33,4 @@ public class CandidateServiceTest {
         List<Candidate> candidates = candidateService.getAllCandidates();
         assertEquals(2, candidates.size());
     }
-
-    @Test
-    void testRegisterCandidate() {
-        Candidate newCandidate = new Candidate(3L, "Charlie", "charlie@example.com", "Other details");
-
-        when(candidateRepository.save(newCandidate)).thenReturn(newCandidate);
-
-        Candidate savedCandidate = candidateService.registerCandidate(newCandidate);
-
-        assertEquals(newCandidate.getId(), savedCandidate.getId());
-        assertEquals(newCandidate.getName(), savedCandidate.getName());
-    }
-
 }

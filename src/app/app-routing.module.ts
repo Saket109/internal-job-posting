@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { JobListComponent } from './components/job-list/job-list.component';
-import { JobFormComponent } from './components/job-form/job-form.component';
+import { JobFormComponent } from './components/job-posting/job-posting.component';
 import { CandidateListComponent } from './components/candidate-list/candidate-list.component';
 import { CandidateFormComponent } from './components/candidate-form/candidate-form.component';
 
