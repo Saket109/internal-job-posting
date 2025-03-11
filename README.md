@@ -52,20 +52,6 @@ Then update services to use:
 
 private apiUrl = `${environment.apiBaseUrl}/jobs`;
 
-🧪 Running Tests
-
-🔍 Backend Tests
-
-Run unit tests using:
-
-mvn test
-
-🔍 Frontend Tests
-
-Run Angular unit tests using:
-
-ng test
-
 
 💡 Future Improvements
 
